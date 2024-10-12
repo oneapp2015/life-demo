@@ -8,9 +8,7 @@ int main()
 {
     //freopen("input.txt", "r", stdin);
     ifstream file("input.txt");
-    ofstream out("out.txt");
-    int n, x, y, z, g;
-    char c;
+    int n, x, y, z;
     const int N=41;
     bool s0[N][N]={}, s1[N][N]={};
     file >> n;
@@ -22,28 +20,6 @@ int main()
     file.close();
     while(1)
     {
-//        c='a';
-//        while(c!='x')
-//        {
-//            cin >> c;
-//            if(c=='o')
-//            {
-//                g=0;
-//                for(int i=1;i<N-1;i++)
-//                {
-//                    for(int j=1;j<N-1;j++)
-//                    {
-//                        if(s0[i][j]==true)
-//                        {
-//                            out << i << " " << j << endl;
-//                            g++;
-//                        }
-//                    }
-//                }
-//                out << g << endl;
-//            }
-//            system("cls");
-//        }
         system("cls");
         for(int i=1;i<N-1;i++)
         {
